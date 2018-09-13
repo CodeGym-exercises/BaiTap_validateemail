@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function validateEmail(str){
+			let regExp = /^[A-Za-z]+[a-zA-Z0-9]*@[a-z0-9A-Z]*.com$/;
+			if(regExp.test(str)){
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+		let input = prompt("Nhập email ");
+		if(validateEmail(input)){
+			alert("Email hợp lệ");
+		}else if(validateEmail(input)==false){
+			alert("Email không hợp lệ");
+		}
+
+	</script>
+</body>
+</html>
